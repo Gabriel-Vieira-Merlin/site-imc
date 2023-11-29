@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal.</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Sora:wght@300;600&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="titulo">
+    <h1>Calculadora de Índice de Massa Corporal (IMC)</h1> 
+    </div>
+
+    <div class="peso">
+    <img class="peso_imagem" src="images/peso.png" alt="ícone de peso">
+    <p class="peso_texto">Informe seu peso em quilos</p>
+    <img class="peso_imagem" src="images/peso.png" alt="ícone de peso">
+    </div>
+    
+    <div class="peso_campo">
+    <input type="text" id="inputPeso" class="peso_campo_input">
+    </div>
+
+    <div class="altura">
+    <img class="altura_imagem" src="images/altura.png" alt="ícone de altura">
+    <p class="altura_texto">Informe sua altura em metros</p>
+    <img class="altura_imagem" src="images/altura.png" alt="ícone de altura">
+    </div>  
+    
+    <div class="altura_campo">
+    <input type="text" id="inputAltura" class="altura_campo_input">
+    </div>
+    
+    <div class="imc">
+    <button class="imc_botao" onclick="calcularImc(); exibirTextoNaTela()">Calcular o IMC</button>
+    <p id="resultadoTexto" class="imc_resultado"></p>
+    </div>
+
+    <div class="explicacao">
+    <h2 class="explicacao_titulo">O que é IMC?</h2>
+    <p class="explicacao_texto">O IMC, ou Índice de Massa Corporal, é uma medida usada para avaliar se uma pessoa está dentro de um peso considerado saudável em relação à sua altura. Ele é vastamente utilizado como uma ferramenta de triagem para categorizar indivíduos em diferentes faixas de peso.</p>
+    <img class="explicacao_imagem" src="images/tabela-imc.png" alt="Tabela IMC">
+    </div>
+
+</body>
+</html>
