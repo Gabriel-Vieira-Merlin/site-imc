@@ -20,7 +20,7 @@ function calcularImc(){
     //Define as categorias de IMC
 if (imc <= 18.5) {
     categoria = 'abaixo do peso';
-} else if (imc > 18.6 && imc <= 24.9) {
+} else if (imc > 18.5 && imc <= 24.9) {
     categoria = 'peso ideal';
 } else if (imc > 24.9 && imc <= 29.9) {
     categoria = 'acima do peso';
@@ -28,7 +28,7 @@ if (imc <= 18.5) {
     categoria = 'obesidade grau 1';
 } else if (imc > 34.9 && imc <= 39.9) {
     categoria = 'obesidade grau 2';
-} else if (imc > 39.9 && imc <= 40) {
+} else if (imc > 39.9) {
     categoria = 'obesidade grau 3';
 }
 
