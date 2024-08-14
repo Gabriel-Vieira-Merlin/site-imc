@@ -18,7 +18,7 @@ function calcularImc(){
     imc = imc.toFixed(1);
 
     //Define as categorias de IMC
-if (imc >= 18.5 && imc <= 18.6) {
+if (imc <= 18.5) {
     categoria = 'abaixo do peso';
 } else if (imc > 18.6 && imc <= 24.9) {
     categoria = 'peso ideal';
